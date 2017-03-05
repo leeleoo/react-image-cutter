@@ -5,7 +5,7 @@ a react component
 ## Getting Started
 `npm i react-image-cutter`
 
-## Useage
+## Usage
 |props|type|description|
 |---|------|------|
 |`imgSrc`|string|a image url|
