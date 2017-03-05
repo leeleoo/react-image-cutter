@@ -1,0 +1,160 @@
+
+.select-container {
+	position: relative;
+	overflow: hidden;
+	background-color: #111;
+	height: 750px;
+}
+
+.select-img {
+	position: relative;
+	overflow: hidden;
+}
+
+.select-img img {
+	visibility: hidden;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.select-box {
+	position: absolute;
+	box-shadow: 0 0 1px 1000px rgba(0, 0, 0, 0.5);
+	cursor: move;
+	z-index: 100;
+	-webkit-appearance: none
+}
+
+.pos-a {
+	position: absolute;
+	z-index: 300;
+	background-color: #fff;
+	opacity: 0.5;
+	border: 1px solid #e3e3e3;
+	height: 20px;
+	width: 20px;
+	border-radius: 20px;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	user-select: none
+}
+
+.left {
+	left: -10px;
+}
+
+.top {
+	top: -10px;
+}
+
+.right {
+	right: -10px;
+}
+
+.bottom {
+	bottom: -10px;
+}
+
+.nwse-resize {
+	cursor: nesw-resize;
+}
+
+.ew-resize {
+	cursor: ew-resize;
+}
+
+.nesw-resize {
+	cursor: nwse-resize;
+}
+
+.select-outer-box {
+	position: absolute;
+}
+
+.resize-strip {
+	position: absolute;
+	background-color: transparent;
+	z-index: 150;
+	-webkit-user-drag: none;
+	-webkit-user-select: none;
+	user-select: none
+}
+
+.top-side {
+	top: -15px;
+	left: 0;
+	right: 0;
+	height: 30px;
+	cursor: ns-resize;
+}
+
+.right-side {
+	right: -15px;
+	top: 0;
+	bottom: 0;
+	width: 30px;
+	cursor: ew-resize;
+}
+
+.bottom-side {
+	bottom: -15px;
+	left: 0;
+	right: 0;
+	height: 30px;
+	cursor: ns-resize;
+}
+
+.left-side {
+	left: -15px;
+	top: 0;
+	bottom: 0;
+	width: 30px;
+	cursor: ew-resize;
+}
+
+html,body{
+	height: 100%;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	font-family: 'Helvetica','Microsoft YaHei','sans-serif';
+}
+th{
+	text-align: center !important;
+}
+a{
+	color: #337ab7;
+}
+
+@mixin position-center{
+	position: absolute;
+	top:0;
+	right: 0;
+	left:0;
+	bottom:0;
+}
+.cancel_button{
+	color: #666 !important;
+	border: 1px solid gray !important;
+}
+.error_msg{
+	color:red;
+	display: block;
+	margin-top: 5px;
+}
+.flex{
+	display: flex;
+}
+.align-items-center{
+	align-items: center;
+}
+.justify-content-center{
+	justify-content: center;
+}
+.aic-jcc{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
