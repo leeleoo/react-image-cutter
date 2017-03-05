@@ -1,5 +1,4 @@
-var path  = require('path');
-//var react = path.resolve(node_modules, 'react/dict/react.js');
+const webpack = require('webpack')
 
 module.exports = {
 	entry    : {
@@ -56,5 +55,12 @@ module.exports = {
 			}
 		]
 	},
-	
+	plugins:[
+		new webpack.optimize.UglifyJsPlugin({
+			compress: {
+				warnings: false,
+				drop_console: false,
+			}
+		}),
+	]
 };
